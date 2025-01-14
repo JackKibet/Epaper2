@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Magazine</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header Styles */
+.header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin-bottom: 10px;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.header nav ul li {
+  margin: 0 15px;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main Section Styles */
+main {
+  padding: 40px 20px;
+}
+
+.featured-article {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.featured-article img {
+  width: 80%;
+  max-width: 800px;
+  height: auto;
+  margin: 20px 0;
+}
+
+.featured-article .summary {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.featured-article .read-more {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.articles {
+  margin-top: 40px;
+}
+
+.article-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.article-item {
+  width: 30%;
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.article-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.article-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.article-item p {
+  margin-bottom: 10px;
+}
+
+.article-item a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.article-item a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  position: relative;
+  top: 50%;
+  bottom: 0;
+}
+.hediv{
+  position: relative;
+  left: 40%;
+  
+}
+input{
+  padding: 15px;
+  border-radius: 5px 0px 0px 5px;
+}
+button{
+  padding: 15px;
+  background-color: rgb(13, 13, 219);
+  color: white;
+}
+p{
+  font-size: 20px;
+}
+header{
+  border-bottom: 6px solid rgb(105, 102, 102);
+}
+h1{
+  color: rgb(206, 26, 26);
+}
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <h1>The Standard Online Magazine</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Latest Articles</a></li>
+        <li><a href="#">Fashion</a></li>
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="hediv">
+      <input type="text" placeholder="News 24/7...">
+      <button>Sign Up</button>
+    </div>
+   
+  </header>
+
+  <!-- Main Section -->
+  <main>
+    <section>
+      <p style="color: blue">
+
+        The Standard, English-language daily newspaper published in Nairobi, 
+        Kenya. It was established in Mombasa in 1902 as a weekly, the African Standard, 
+        by A.M. Jeevanjee, an Indian merchant. Jeevanjee hired an English editor-reporter, 
+        W.H. Tiller, to oversee the newspaper’s operations. In 1910 the paper became a daily, 
+        changed its name to the East African Standard, and moved to Nairobi, which was then fast 
+        developing as a commercial centre. It had already come under British ownership. In its early
+         years the paper defended the interests of Kenya’s white settlers, but by the 1970s it had developed 
+         a more balanced approach to news reporting and had built a reputation for fine writing and technical
+          excellence. After independence the paper retained the freedom to publish but was not allowed to 
+          criticize the government’s single political party or its leaders
+      </p>
+    </section>
+    <section class="featured-article">
+      <h2>Featured Article</h2>
+      <img src="epaper.jpg" alt="Featured Article">
+      <p class="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia est non ex mollis, eget feugiat purus auctor. Sed ac nisi libero.</p>
+      <a href="#" class="read-more">Read More</a>
+    </section>
+
+    <section class="articles">
+      <h2>Latest Articles</h2>
+      <div class="article-list">
+        <div class="article-item">
+          <img src="epaper2.jpg" alt="Article 1">
+          <h3>Article Title 1</h3>
+          <p>Brief introduction to article 1...</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="article-item">
+          <img src="epaper3.jpeg" alt="Article 2">
+          <h3>Article Title 2</h3>
+          <p>Brief introduction to article 2...</p>
+          <a href="#">Read More</a>
+        </div>
+        <div class="article-item">
+          <img src="epaper4.jpg" alt="Article 3">
+          <h3>Article Title 3</h3>
+          <p>Brief introduction to article 3...</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Online Magazine | Designed by Jack Kibet</p>
+  </footer>
+
+  <script src="scripts.js">
+    document.addEventListener('DOMContentLoaded', function () {
+  const articles = document.querySelectorAll('.article-item');
+
+  window.addEventListener('scroll', function () {
+    const windowHeight = window.innerHeight;
+    const scrollPosition = window.scrollY;
+
+    articles.forEach((article) => {
+      const articlePosition = article.getBoundingClientRect().top + scrollPosition;
+      if (scrollPosition + windowHeight >= articlePosition) {
+        article.classList.add('visible');
+      } else {
+        article.classList.remove('visible');
+      }
+    });
+  });
+});
+
+  </script>
+</body>
+</html>
